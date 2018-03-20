@@ -18,9 +18,9 @@ namespace SwissTool.Ext.WpfSample
     using SwissTool.Ext.WpfSample.Models;
     using SwissTool.Ext.WpfSample.ViewModels;
     using SwissTool.Ext.WpfSample.Views;
+    using SwissTool.Framework.Commanding;
     using SwissTool.Framework.Enums;
     using SwissTool.Framework.Infrastructure;
-    using SwissTool.Framework.UI.Commanding;
     using SwissTool.Framework.UI.Managers;
 
     /// <summary>
@@ -127,7 +127,7 @@ namespace SwissTool.Ext.WpfSample
                         Identifier = "FirstActionHotkey", // Just an internal identifier, whatever you want, but should be unique for each action.
                         Name = "First hotkey action", // The name that will be displayed in the UI.
                         Description = "The first hotkey bindable action command", // The tooltip of the action.
-                        Icon = new BitmapImage(new Uri("/QuickNote;component/Resources/Images/Switch.png", UriKind.RelativeOrAbsolute)), // Image path, set Build Action to Resource
+                        Icon = new BitmapImage(new Uri("/WpfSample;component/Resources/Images/Unknown.png", UriKind.RelativeOrAbsolute)), // Image path, set Build Action to Resource
                         Command = new RelayCommand(o => this.PerformFirstMenuAction()), // The action command to execute.
                         DefaultHotKey = new ActionHotKey(HotKeyModifier.Control, HotKeyModifier.Shift, HotKey.D1) // The hotkey to bind to the action command.
                     });
