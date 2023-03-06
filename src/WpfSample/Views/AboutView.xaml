@@ -12,7 +12,7 @@
                             Heading="{Binding Path=Model.Title}" 
                             SubHeading="{Binding Path=VersionDisplayString}"
                             AcceptCommand="{Binding Path=CloseCommand}" 
-                            Icon="/WpfSample;component/Resources/Images/Unknown.png"
+                            Image="/WpfSample;component/Resources/Images/Unknown.png"
                             ShowCancelButton="False"
                             FooterText="{Binding Path=Model.Copyright}">
     <controls:MetroDialogWindow.InputBindings>
